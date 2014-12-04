@@ -2,14 +2,12 @@
 <html x-dot>
 <head>
   <meta charset="utf-8">
-  <title>DemoX Test Suite</title>
+  <title>RandomX Test Suite</title>
   <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen">
   <script src="../bower_components/qunit/qunit/qunit.js"></script>
   <script src="../bower_components/domx/dist/domx.js"></script>
-  <script src="../bower_components/domx-stringify/dist/domx-stringify.js"></script>
-  <script src="../bower_components/MutationObserver-shim/dist/mutationobserver.min.js"></script>
-  <script src="../dist/demo-x.js"></script>
-  <script src="demo-x.js"></script>
+  <script src="../dist/random-x.js"></script>
+  <script src="random-x.js"></script>
   <script type="text/javascript">
     // make REPL work in the console easy
     window.D = document;
@@ -19,16 +17,10 @@
   <div id="qunit"></div>
   <div id="qunit-fixture">
   </div>
-  <demo-x>
-    <demo-in>
-      <pre>document;//TODO stuff</pre>
-    </demo-in>
-    <demo-out></demo-out>
-    <demo-dom>
-      <div x-dot>
-      TODO
-      </div>
-    </demo-dom>
-  </demo-x>
+  <random-x>
+    <span>Zero</span>
+    <p>One</p>
+    <div>Two</div>
+  </random-x>
 </body>
 </html>

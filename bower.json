@@ -1,33 +1,32 @@
 {
-  "name": "demo-x",
+  "name": "random-x",
   "version": "0.1.0",
-  "homepage": "http://esha.github.io/demo-x/",
+  "homepage": "http://esha.github.io/random-x/",
   "authors": [
     "ESHA Research <nathan@esha.com>"
   ],
-  "description": "Interactive, scripted code demo",
-  "main": "dist/demo-x.js",
+  "description": "Web component that randomly displays only one of its child elements.",
+  "main": "dist/random-x.js",
   "keywords": [
     "domx",
     "documentation",
-    "demo",
-    "code",
-    "scripted"
+    "random",
+    "web component"
   ],
   "author": {
     "name": "ESHA Research",
     "email": "nathan@esha.com",
     "url": "http://www.esha.com/"
   },
-  "bugs": "https://github.com/esha/demo-x/issues",
+  "bugs": "https://github.com/nbubna/random-x/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com:esha/demo-x.git"
+    "url": "https://github.com:nbubna/random-x.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/esha/demo-x/master/LICENSE-MIT"
+      "url": "https://github.com/nbubna/random-x/blob/master/LICENSE-MIT"
     }
   ],
   "ignore": [
@@ -38,9 +37,7 @@
     "tests"
   ],
   "dependencies": {
-    "domx": ">0.13.0",
-    "domx-stringify": ">=0.1.0",
-    "MutationObserver-shim": "~0.2.8"
+    "domx": ">0.13.0"
   },
   "devDependencies": {
     "qunit": "~1.15.0"

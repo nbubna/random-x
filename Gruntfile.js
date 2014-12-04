@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         options: {
           frame: 'src/frame.js',
         },
-        src: ['src/demo-x.js'],
+        src: ['src/random-x.js'],
         dest: 'dist/<%= pkg.name %>.js'
       },
     },
