@@ -1,6 +1,6 @@
 {
   "name": "random-x",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "title": "RandomX",
   "description": "Web component that randomly displays only one of its child elements.",
   "main": "dist/random-x.js",

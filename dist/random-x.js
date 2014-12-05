@@ -1,4 +1,4 @@
-/*! random-x - v0.1.0 - 2014-12-04
+/*! random-x - v0.1.1 - 2014-12-04
 * http://esha.github.io/random-x/
 * Copyright (c) 2014 ESHA Research; Licensed MIT */
 
@@ -11,9 +11,7 @@ var RandomXProto,
 if (D.registerElement) {
     RandomXProto = Object.create(HTMLElement.prototype);
     RandomXProto.createdCallback = function(){ this.randomize(); };
-    RandomX = window.RandomX = D.registerElement('random-x', {
-        prototype: RandomXProto
-    });
+    // wait to register until proto is complete
 } else {
     RandomXProto = {};
     RandomX = window.RandomX = function RandomX(el) {
@@ -40,6 +38,13 @@ RandomXProto.randomize = function() {
     this.queryAll('*').remove();
     this.append(chosen);
 };
+
+// ok, register now that proto is ready
+if (D.registerElement) {
+    RandomX = window.RandomX = D.registerElement('random-x', {
+        prototype: RandomXProto
+    });
+}
 
 
 })(window, document);
